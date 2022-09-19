@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hammersmith+One&family=Josefin+Sans:wght@500&family=Open+Sans:wght@700&family=Oswald:wght@600&family=Poppins:wght@700&family=Work+Sans&display=swap");
+* {
+  box-sizing: border-box;
+}
+:root {
+  --theme: rgb(4, 171, 255);
+  --them-dark: rgb(4, 149, 221);
+}
+body{
+display: grid;
+  height: 100vh;
+place-items: center;
+font-family: "Work Sans", sans-serif;
+}
+.container {
+
+    border-radius: 9px;
+background: #ffffff;
+box-shadow:  7px 7px 42px #d6d6d6,
+             -7px -7px 42px #ffffff;
+
+    width: 300px;
+    height: 400px;
+padding: 10px;
+
+}
+
+.keys {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-gap: 10px;
+
+    padding: 10px;
+
+    margin:auto;
+
+}
+
+.button {
+
+    height: 60px;
+
+    padding: 5px;
+
+    background-color: #fff;
+
+    border-radius: 3px;
+
+    border: 1px solid #c4c4c4;
+
+    background-color: transparent;
+
+    font-size: 2rem;
+
+    color: #333;
+
+    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0,0,0,.04));
+
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,.05), inset 0 1px 0 0 rgba(255,255,255,.45), inset 0 -1px 0 0 rgba(255,255,255,.15), 0 1px 0 0 rgba(255,255,255,.15);
+
+    text-shadow: 0 1px rgba(255,255,255,.4);
+
+}
+input{
+outline: none;
+  border: 1px solid transparent;
+}
+.button:hover {
+
+    background-color: #eaeaea;
+
+}
+.operator {
+font-size: 1.4rem;
+    background-color: var(--theme);
+
+}
+
+.clear {
+
+    background-color: #f0595f;
+
+    border-color: #b0353a;
+
+    color: #fff;
+
+    width: 80px;
+
+    height: 40px;  
+
+}
+
+.clear:hover {
+
+    background-color: #f17377;
+
+}
+
+.equal-sign {
+
+    background-color: var(--theme);
+
+    border-color: var(--them-dark);
+
+    color: #fff;
+
+}
+
+.equal-sign:hover {
+
+    background-color: var(--them-dark);
+
+}
+
+.screen{
+
+    background-color:rgb(12, 67, 82);
+
+    justify-content: center;
+align-items: center;
+    color: rgb(3, 157, 252);
+
+    font-size: medium;
+
+    width: 70%;
+
+    height: 40%;
+
+    cursor: default;
+    margin-bottom: 10px;
+    padding: 10px;
+
+}
